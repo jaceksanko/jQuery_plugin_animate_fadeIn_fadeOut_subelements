@@ -1,6 +1,6 @@
-# jQuery_plugin_animate_fadeIn_fadeOut_subelements
+# jQuery_plugin_animate_subelements
 
-Plugin animate subelements - direct children of selected element witch specific parameters: direction (fadeIn/fadeOut/slideDown/slideUp/animate), duraction and delay.
+Plugin animate subelements - direct children of selected element witch specific parameters: animation (fadeIn/fadeOut/slideDown/slideUp/animate), duraction and delay.
 
 How to used?
 
