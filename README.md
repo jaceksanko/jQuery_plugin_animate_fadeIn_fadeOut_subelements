@@ -31,14 +31,14 @@ duraction: 500,<br>
 delay: 200<br>
 }
 
-$(".test2").animateSubelements({
-  animation: "animate",
-  duraction: 500,
-  delay: 500,
-  properity: {
-    width: "70%",
-    opacity: 0.4,
-    marginLeft: "0.6in",
-    fontSize: "3em",
-    borderWidth: "10px"}
+$(".test2").animateSubelements({<br>
+  animation: "animate",<br>
+  duraction: 500,<br>
+  delay: 500,<br>
+  properity: {<br>
+    width: "70%",<br>
+    opacity: 0.4,<br>
+    marginLeft: "0.6in",<br>
+    fontSize: "3em",<br>
+    borderWidth: "10px"}<br>
 })
