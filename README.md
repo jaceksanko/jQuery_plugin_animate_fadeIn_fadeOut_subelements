@@ -3,27 +3,28 @@
 Plugin animate subelements - direct children of selected element witch specific parameters: direction (fadeIn/fadeOut), duraction and delay.
 
 How to used?
+
 You must put 3 parameters:
 1. direction - "fadeIn" or "fadeOut"
 2. duraction in ms
 3. delay in ms
 
-$("example_elements").animateSubelements({
-  direction: "fadeIn" or "fadeOut",
-  duraction: number in ms,
-  delay: number in ms
+$("example_elements").animateSubelements({ <br>
+  direction: "fadeIn" or "fadeOut", <br>
+  duraction: number in ms, <br>
+  delay: number in ms <br>
 })
 
-example:
-$("div").animateSubelements({
-  direction: "fadeIn",
-  duraction: 500,
-  delay: 500
+example:<br>
+$("div").animateSubelements({ <br>
+  direction: "fadeIn",<br>
+  duraction: 500,<br>
+  delay: 500<br>
 })
 
-If you used plugin without parameters the plugin will set the default parameters:
-{
-direction: "fadeIn",
-duraction: 500,
-delay: 200
+If you used plugin without parameters the plugin will set the default parameters:<br>
+{<br>
+direction: "fadeIn",<br>
+duraction: 500,<br>
+delay: 200<br>
 }
