@@ -1,5 +1,4 @@
 import animateSubelementsPlugin  from "./animateSubelementsPlugin.js";
-
 //Examples runing
 $(".test1").animateSubelements({
     animation: "slideDown",

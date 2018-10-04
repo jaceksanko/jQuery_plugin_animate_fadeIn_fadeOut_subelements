@@ -1,5 +1,5 @@
 /* 
-plugin animate subelements, direct children of selected element witch specific parameters: 
+plugin animate subelements, direct children of selected element with specific parameters: 
 animation type,  properitys specific for aniamtion type (in array), delay and 
 displaySub (none if animation subelement must display none before animation start or "" if not). 
 */
