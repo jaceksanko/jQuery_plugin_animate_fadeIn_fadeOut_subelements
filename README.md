@@ -18,7 +18,7 @@ Remember to change the script type attribute in the html file with the main js f
 1. animation type in string - like "fadeIn", "fadeOut", "slideDown", "slideUp", "animate" or another 
 2. properity in array -  parameters corresponding to the type of animation selected above
 3. delay in ms - daley animation 
-4. displaySub in string - "none" if animation subelements must "display: non" before animation start or "" if not
+4. displaySub in string - "none" if animation subelements must "display: none" before animation start or "" if not
 
 ```
 $("<example_elements>").animateSubelements({
@@ -29,7 +29,7 @@ $("<example_elements>").animateSubelements({
 })
 ```
 ### Settings defaults
-If you use a plug-in without parameters or do not put one of the parameters, the plugin will set the default parameters:
+If you use a plugin without parameters or do not put one of the parameters, the plugin will set the default parameters:
 
 ```
 {
