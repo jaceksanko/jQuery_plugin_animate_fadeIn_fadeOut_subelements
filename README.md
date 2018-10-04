@@ -1,4 +1,4 @@
-# jQuery_plugin_animate_subelements
+# jQuery plugin "animateSubelements"
 
 ### Plugin animate subelements -direct children of selected element with specific parameters: 
 - animation type,  
