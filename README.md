@@ -1,44 +1,73 @@
 # jQuery_plugin_animate_subelements
 
-Plugin animate subelements - direct children of selected element witch specific parameters: animation (fadeIn/fadeOut/slideDown/slideUp/animate), duraction and delay.
+### Plugin animate subelements -direct children of selected element with specific parameters: 
+- animation type,  
+- properitys specific for animation type (in array), 
+- delay and 
+- displaySub
 
-How to used?
+### How to install?
+Plugin is in js folder in animateSubelementsPlugin.js file. Copy this file to your js files and import to your code:
+```
+import animateSubelementsPlugin  from "./animateSubelementsPlugin.js";
+```
+Remember to change the script type attribute in the html file with the main js file in this way: ```<script type="module" src="<your js file js>"></script>```
 
-You must put 3 parameters:
-1. animation - "fadeIn" or "fadeOut" or "slideDown" or "slideUp" or "animate"
-2. duraction in ms
-3. delay in ms
-4. properity if you used "animate" in animation type 
+### How to use?
+##### You must put 3 parameters:
+1. animation type in string - like "fadeIn", "fadeOut", "slideDown", "slideUp", "animate" or another 
+2. properity in array -  parameters corresponding to the type of animation selected above
+3. delay in ms - daley animation 
+4. displaySub in string - "none" if animation subelements must "display: non" before animation start or "" if not
 
-$("example_elements").animateSubelements({ <br>
-  animation: "fadeIn" or "fadeOut" or "slideDown" or "slideUp" or "animate", <br>
-  duraction: number in ms, <br>
-  delay: number in ms <br>
-  properity: object same like in .animate() metod in jQuery https://api.jquery.com/animate/
+```
+$("<example_elements>").animateSubelements({
+ 	animation: "<animation type>",
+	properity: [<properity1>, <properity1>, <...> ],
+	delay: <number in ms>,
+	displaySub: "<"none" or "">"
 })
+```
+### Settings defaults
+If you use a plug-in without parameters or do not put one of the parameters, the plugin will set the default parameters:
 
-example:<br>
-$("div").animateSubelements({ <br>
-  animation: "fadeIn",<br>
-  duraction: 500,<br>
-  delay: 500<br>
-})
-
-If you used plugin without parameters the plugin will set the default parameters:<br>
-{<br>
-animation: "fadeIn",<br>
-duraction: 500,<br>
-delay: 200<br>
+```
+{
+	animation: "fadeOut",
+	properity: [500],
+	delay: 500,
+	displaySub: ""
 }
+```
 
-$(".test2").animateSubelements({<br>
-  animation: "animate",<br>
-  duraction: 500,<br>
-  delay: 500,<br>
-  properity: {<br>
-    width: "70%",<br>
-    opacity: 0.4,<br>
-    marginLeft: "0.6in",<br>
-    fontSize: "3em",<br>
-    borderWidth: "10px"}<br>
-})
+### Example:
+```
+$("div").animateSubelements({
+    animation: "fadeIn",
+    properity: [600],
+    delay: 600,
+    displaySub: "none"
+});
+```
+```
+$(".test2").animateSubelements({
+    animation: "animate",
+    properity: [
+        {
+            width: "70%",
+            opacity: 0.4,
+            marginLeft: "0.6in",
+            fontSize: "3em",
+            borderWidth: "10px"
+        },
+        500
+    ],
+    delay: 500
+});
+```
+### How to start a demo?
+Clone this repository and put commands:
+```
+npm install
+npm run browsersync
+```
